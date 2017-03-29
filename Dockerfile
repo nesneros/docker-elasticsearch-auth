@@ -1,6 +1,4 @@
-FROM elasticsearch:5.2.2-alpine
-
-RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install -b x-pack
+FROM docker.elastic.co/elasticsearch/elasticsearch:5.3.0
 
 COPY config /usr/share/elasticsearch/config
 
