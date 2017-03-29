@@ -1,7 +1,7 @@
 http.host: 0.0.0.0
 transport.host: 0.0.0.0
 
-#cluster.name: mycluster
+cluster.name: ${CLUSTER_NAME}
 
 discovery.zen.ping.unicast.hosts: ${DISCOVERY_SERVICE}
 discovery.zen.minimum_master_nodes: ${NUM_MASTER_NODES}
